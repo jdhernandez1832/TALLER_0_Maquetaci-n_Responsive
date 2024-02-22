@@ -23,45 +23,6 @@ font-family: 'Roboto', sans-serif;
 h1,h2,h3,h4,h5{
 font-family: 'Marcellus', serif;
 }
-#features{
-    background: url(../img/index/bg-features.png);
-    color: white;
-    padding-top: 1rem;
-        }
-.features-title{
-    background-color: rgba(0,0,0,0.35);
-    text-align: center;
-    padding: 0.5rem;
-    font-size: 1.5em;
-    }
-.features-description{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    }
-.feature{
-    width: 25%;
-    min-width: 180px;
-    max-width: 230px;
-    margin: 0.8rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    }
-.feature i{
-    font-size: 2.2em;
-    margin-bottom: 1.5rem;
-    }
-.feature-blue{
-    background-color: #00325eae;
-    }
-.feature-black{
-    background-color: rgba(0,0,0,0.59);
-    }
-@media screen and (min-width: 0px) {
     .logo{
         background-color: var(--negro2);
         display: flex;
@@ -78,7 +39,7 @@ font-family: 'Marcellus', serif;
         font-size: 2rem;
     }
     .menu{
-        background-color: rgba(1, 10, 52, 0.838);
+        background-color: rgb(1, 10, 52);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -87,6 +48,7 @@ font-family: 'Marcellus', serif;
     .menu-hr{
         width: 90%;
         background-color: var(--blanco);
+        justify-self: center;
         }
     .item{
         padding: 1rem;
@@ -100,66 +62,83 @@ font-family: 'Marcellus', serif;
         background-color: #0B3860;
         width: 100%;
     }
-    .navbar-button{
-    background-color:transparent;
-    border: none;
-    border-radius: 3px;
-    font-size: 1em;
-    padding: 0.5rem;
-    font-family: 'Marcellus', serif;
-    color: var(--blanco);
-    }
-}
-/*Resolución tablet*/
-@media screen and (min-width: 768px){
-    .logo{
-        background-color: var(--negro2);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1rem;
-        }
-    .logo img{
-        width: 40%;
-        max-width: 200px;
-        }
-    .logo i{
+    #banner { 
+        background-image: url('../img/index/slide1.jpg'); 
+        background-size: cover; 
+        background-position: 50% 50%; 
+        min-height: 400px; 
+        position: relative;
+    } 
+    .mensaje{
         color: var(--blanco);
-        font-size: 2rem;
+        background-color:#30334270;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 70%;
+        margin-left: 2px;
+        position: absolute;
+        bottom: 0;
+        padding: 1em;
+
     }
-    .menu{
-        background-color: rgba(1, 10, 52, 0.838);
+    .descripcion{
+        padding: 2em;
+        font-size: larger;
+    }
+    #features{
+        background: url('../img/index/bg-features.png');
+        color: white;
+        background-position: 50% 50%; 
+        padding: 0.5em;
+            }
+    .features-title{
+        background-color: rgba(0,0,0,0.35);
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5em;
+        }
+    .features-description{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        }
+    .feature{
+        width: 25%;
+        min-width: 180px;
+        max-width: 230px;
+        margin: 0.8rem;
+        padding: 1rem;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        border-radius: 5px;
         }
-    .menu-hr{
-        width: 90%;
-        background-color: var(--blanco);
+    .feature i{
+        font-size: 2.2em;
+        margin-bottom: 1.5rem;
         }
-    .item{
-        padding: 1rem;
+    .feature-blue{
+        background-color: #00325eae;
         }
-        nav a{
-        color: var(--blanco);
-        text-decoration: none;
+    .feature-black{
+        background-color: rgba(0,0,0,0.59);
+        }
+    #ubicacion{
+        padding: 1em;
         text-align: center;
-        }       
-    nav a:hover{
-        background-color: #0B3860;
+    }
+    .ubicanos{
+        font-size: 40px;
+    }
+    .menu-hr2{
         width: 100%;
+        color: var(--azuloscuro);
+        justify-self: center;
     }
-    .navbar-button{
-    background-color:transparent;
-    border: none;
-    border-radius: 3px;
-    font-size: 1em;
-    padding: 0.5rem;
-    font-family: 'Marcellus', serif;
-    color: var(--blanco);
+    .mapa{
+        width: 95%;
+        padding: 1em;
     }
-}
 /*Resolución notebooks*/
 @media screen and (min-width: 1024px){
     nav{
@@ -188,8 +167,24 @@ font-family: 'Marcellus', serif;
     .menu-hr{ /*ocultamos la barra de división*/
         display: none;
         }
-    .navbar-button{
-        background-color:var(--azuloscuro);
+        .item { 
+            margin: 0 1rem; 
+            align-self: center; 
+        } 
+        
+        nav a { 
+            text-align: left; 
+        } 
+        
+        nav a:hover { 
+            background-color: transparent; 
+            color: var(--azuloscuro); 
+            width: auto;
+        } 
+        
+        .navbar-button { 
+            background-color: var(--azuloscuro); 
+            align-self: center; 
         }
 }
 
