@@ -207,6 +207,25 @@ font-family: 'Marcellus', serif;
         margin-left: 3em;
         position: relative;
     }
+    #final{
+        color: var(--blanco);
+        background-color: var(--negro2);
+        padding: 1em;
+    }
+    .textofo{
+        padding: 1em;
+        font-size: large;
+    }
+    .menu-hr3{
+        width: 100%;
+        background-color: var(--blanco);
+        justify-self: center;
+    }
+    .politicas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 /*Resolución notebooks*/
 @media screen and (min-width: 1024px){
     nav{
