@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro Huesped</title>
+        <link rel="stylesheet" href="css/registro.css">
+    </head>
+    <body>
+        <div class="contenedor1">
+            <section>
+                <nav class="contenedor2">
+                    <img src="img/Hotelia horizontal blanco.svg" alt="">
+                    <div>
+                        <h1>Eres mas que bienvenido</h1>
+                    </div>
+                    <div>
+                        <h1>Un lugar en tu corazon</h1>
+                    </div>
+                </nav>
+            </section>
+            <section>
+                <main class="formulario">
+                    <form action="">
+                        <h1>Registrate</h1>
+                        <label for="tipo">Tipo de documento</label>
+                        <br>
+                        <select id="tipo">
+                            <option value="opcion1">Cedula</option>
+                            <option value="opcion2">Pasaporte</option>
+                            <option value="opcion3">Tarjeta de identidad</option>
+                          </select>
+                          <br>
+                        <label for="NumDoc">Numero de documento</label>
+                        <br>
+                        <input type="number" id="NumDoc">
+                        <br>
+                        <label for="Nomb">Nombre</label>
+                        <br>
+                        <input type="text" id="Nomb">
+                        <br>
+                        <label for="Apell">Apellido</label>
+                        <br>
+                        <input type="text" id="Apell">
+                        <br>
+                        <label for="FechaN">Fecha de nacimiento</label>
+                        <br>
+                        <input type="date" id="FechaN">
+                        <br>
+                        <label for="gene">Genero</label>
+                        <br>
+                        <div class="genero">
+                        <input class="radio" type="radio" id="opcion1" name="opciones" value="opcion1">
+                        <label for="opcion1">Mujer</label><br>
+                        <input class="radio" type="radio" id="opcion2" name="opciones" value="opcion2">
+                        <label for="opcion2">Hombre</label><br>
+                        <input class="radio" type="radio" id="opcion3" name="opciones" value="opcion3">
+                        <label for="opcion3">Otro</label>
+                        </div>
+                        <br>
+                        <label for="Email">Email</label>
+                        <br>
+                        <input type="email" id="Email">
+                        <br>
+                        <label for="tel">Telefono de contacto</label>
+                        <br>
+                        <input type="number" id="tel">
+                        <br>
+                        <label for="Pais">Pais de origen</label>
+                        <br>
+                        <input type="text" id="Pais">
+                        <br>
+                        <label for="Foto">Foto</label>
+                        <br>
+                        <input type="file" id="Foto">
+                        <br>
+                        <label for="Con">Contraseña</label>
+                        <br>
+                        <input type="password" id="Con">
+                        <br>
+                        <label for="ConC">Confirmar contraseña</label>
+                        <br>
+                        <input type="password" id="ConC">
+                        <br>
+                        <input type="checkbox" id="Che" class="radio">
+                        <label for="Che">Acepta terminos y condiciones</label>
+                        <br>
+                        <center><button class="boton">Ingresar</button></center>
+                    </form>
+                </main>
+            </section>
+        </div>
+    </body>
+</html>
