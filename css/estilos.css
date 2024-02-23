@@ -235,6 +235,10 @@ font-family: 'Marcellus', serif;
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    .caja2{
+        display: none;
+       
+    }
 /*Resolución notebooks*/
 @media screen and (min-width: 1024px){
     nav{
@@ -285,6 +289,28 @@ font-family: 'Marcellus', serif;
     .imgdesc{
         display: block;
         }
+    .menu-hr3{ 
+        display: none;
+        }
+    .divp{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .caja1{
+        width: 40em;
+        position: relative;
+    }
+
+    .politicas{
+        display: inline;
+    }
+    .nada{
+        display: none;
+    }
+    .caja2{
+        display: block;
+    }
 }
 
         
