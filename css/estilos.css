@@ -80,9 +80,18 @@ font-family: 'Marcellus', serif;
         padding: 1em;
 
     }
+    #descripcion{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .imgdesc{
+        display: none;
+    }
     .descripcion{
         padding: 2em;
         font-size: larger;
+        width: 40em;
     }
     #features{
         background: url('../img/index/bg-features.png');
@@ -272,6 +281,9 @@ font-family: 'Marcellus', serif;
         .navbar-button { 
             background-color: var(--azuloscuro); 
             align-self: center; 
+        }
+    .imgdesc{
+        display: block;
         }
 }
 
