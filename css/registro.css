@@ -28,27 +28,44 @@ font-family: 'Marcellus', serif;
 .contenedor1{
     display: grid;
     grid-gap: 28px;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, auto);
+    grid-template-areas: "contenedor2 "
+                         "formulario ";
     
-    
+}
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .contenedor2{
     background-color: #0b3860bb;
     color: var(--blanco);
+    text-align: center;
+    grid-area: contenedor2;
+    min-width: 20em;
+    margin-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+h1{
     font-size: 2em;
 }
 .formulario{
-    display: flex;
+    display:grid;
     justify-content: center;
     align-items: center;
     background-color: #ffffff52;
     width: 25em;
-    height: 50em;
-
+    height: 46em;
+    border-radius: 12px;
 }
 input, select{
     width: 100%;
     margin-bottom: 1em;
+    border-radius: 3px;
+    border-style: none;
+    color: #0B3860;
 }
 .radio{
     width: auto;
@@ -71,4 +88,7 @@ input, select{
     height: 2em;
     color: var(--negro2);
 
+}
+.nada{
+    display: none;
 }
