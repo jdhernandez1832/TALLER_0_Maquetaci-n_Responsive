@@ -92,3 +92,52 @@ input, select{
 .nada{
     display: none;
 }
+
+@media screen and (min-width: 1024px){
+    
+    .nada{
+        display: block;
+        
+    }
+    .nada2{
+        display: none;
+    }
+    .contenedor1{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-areas: "contenedor2 "
+                             "formulario ";
+                             
+    }
+    .contenedor2{
+        background-color: #0b3860bb;
+        color: var(--blanco);
+        grid-area: contenedor2;
+        min-width: 25em;
+        min-height: 900px;
+        width: 25em;
+        padding: 0;
+        margin: 0;
+    }
+    .formulario{
+        background-color: #ffffff52;
+        width: 40em;
+        height: 46em;
+        border-radius: 12px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+    input, select, label, button, h1{
+
+        display: none;
+    }
+    br{
+        display: none;
+    }
+    .form{
+        min-width: 600px;
+
+
+    }
+}
